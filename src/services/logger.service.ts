@@ -6,7 +6,7 @@ export class LoggerService {
     console.log('LoggerService constructor ');
   }
 
-  public log() {
-    console.log('this is a fucking test in LoggerService ');
+  public log(message: string) {
+    console.log('this is a fucking test in LoggerService ', message);
   }
 }

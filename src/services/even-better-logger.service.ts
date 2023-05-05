@@ -9,8 +9,8 @@ export class EvenBetterLoggerService extends LoggerService {
     super();
   }
 
-  override log() {
-    const name = this.userService.user.name;
+  override log(message: string) {
+    const name = this.userService.user.userName;
     super.log(`Message to ${name}: ${message}`);
   }
 

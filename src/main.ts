@@ -115,7 +115,7 @@ const routes = [
 })
 export class AppComponent {
   constructor(private loggerService: LoggerService) {
-    loggerService.log();
+    loggerService.log('test from AppComponent  ');
   }
   matSidenavOpened = false;
   name = 'Brian Love';

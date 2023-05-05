@@ -114,9 +114,8 @@ const routes = [
   ],
 })
 export class AppComponent {
-  constructor(private evenBetterLogger: EvenBetterLoggerService) {
-    evenBetterLogger.log();
-    evenBetterLogger.log2();
+  constructor(private loggerService: LoggerService) {
+    loggerService.log();
   }
   matSidenavOpened = false;
   name = 'Brian Love';
